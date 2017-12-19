@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="practica3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naranja" translatesAutoresizingMaskIntoConstraints="NO" id="vW6-Ps-9Q9">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNI-PO-baE">
+                                <rect key="frame" x="219" y="101" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmU-44-Qna">
+                                <rect key="frame" x="158" y="145" width="164" height="30"/>
+                                <state key="normal" title="SELECCIONAR FECHAS"/>
+                                <connections>
+                                    <segue destination="rCf-Z8-PPa" kind="presentation" identifier="fechaNacimiento" id="KSO-Yl-rrq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW2-jL-Mp2">
+                                <rect key="frame" x="219" y="219" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIA-ug-qS9">
+                                <rect key="frame" x="240" y="280" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kR-n3-Lz1">
+                                <rect key="frame" x="219" y="40" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vW6-Ps-9Q9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3PK-0C-L6j"/>
+                            <constraint firstItem="0kR-n3-Lz1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5u6-UJ-BRD"/>
+                            <constraint firstItem="DNI-PO-baE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Yd-SQ-Hrb"/>
+                            <constraint firstItem="0kR-n3-Lz1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="40" id="AD2-Qe-sZS"/>
+                            <constraint firstItem="cW2-jL-Mp2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B64-XM-Fdu"/>
+                            <constraint firstItem="SmU-44-Qna" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J1r-fJ-lui"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AIA-ug-qS9" secondAttribute="bottom" constant="40" id="Mqk-bf-epX"/>
+                            <constraint firstItem="DNI-PO-baE" firstAttribute="top" secondItem="0kR-n3-Lz1" secondAttribute="bottom" constant="40" id="TfC-uz-1bX"/>
+                            <constraint firstItem="vW6-Ps-9Q9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="WWP-HY-Wvc"/>
+                            <constraint firstItem="SmU-44-Qna" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZUr-OU-RfF"/>
+                            <constraint firstItem="AIA-ug-qS9" firstAttribute="top" secondItem="cW2-jL-Mp2" secondAttribute="bottom" constant="40" id="cUG-47-Ap5"/>
+                            <constraint firstItem="vW6-Ps-9Q9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gnl-4U-a2w"/>
+                            <constraint firstItem="AIA-ug-qS9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kw6-Do-Qce"/>
+                            <constraint firstItem="vW6-Ps-9Q9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="myI-al-7Lr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="FechaNacimientoLabel" destination="0kR-n3-Lz1" id="PLa-y9-F9x"/>
+                        <outlet property="fechaEnamoramientoLabel" destination="DNI-PO-baE" id="DlC-HO-QxE"/>
+                        <outlet property="fechaMuerteLabel" destination="cW2-jL-Mp2" id="RVD-DA-JTX"/>
+                        <outlet property="fechaNacimientoLabel" destination="0kR-n3-Lz1" id="fxC-Yn-PJC"/>
+                        <outlet property="imageView" destination="vW6-Ps-9Q9" id="Vd0-Hf-QLF"/>
+                        <outlet property="resLabel" destination="cW2-jL-Mp2" id="Icx-fu-spB"/>
+                        <outlet property="timerLabel" destination="AIA-ug-qS9" id="Mgg-oT-wQV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-368" y="100"/>
+        </scene>
+        <!--Selector Fecha Nacimiento View Controller-->
+        <scene sceneID="WaG-Fl-HwD">
+            <objects>
+                <viewController id="rCf-Z8-PPa" customClass="SelectorFechaNacimientoViewController" customModule="practica3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6k2-7t-KjA"/>
+                        <viewControllerLayoutGuide type="bottom" id="TmF-1z-4O0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tOc-a9-vIR">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vinilos-infantiles-cigena-y-bebe" translatesAutoresizingMaskIntoConstraints="NO" id="yOg-A0-GUU">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de nacimiento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSh-BY-nYw">
+                                <rect key="frame" x="160.5" y="30" width="159" height="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="jVw-ci-2yH">
+                                <rect key="frame" x="0.0" y="79" width="480" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="530217204.48756802">
+                                    <!--2017-10-20 18:33:24 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POl-cv-38T">
+                                <rect key="frame" x="98.5" y="250" width="43" height="30"/>
+                                <state key="normal" title="Volver"/>
+                                <connections>
+                                    <segue destination="aVD-v2-g5D" kind="unwind" identifier="" unwindAction="finaliza:" id="nsI-x8-WCG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Mr-SF-OJH">
+                                <rect key="frame" x="320" y="250" width="80" height="30"/>
+                                <state key="normal" title="Seleccionar"/>
+                                <connections>
+                                    <segue destination="3HS-DW-tX3" kind="presentation" identifier="fechaNacSeleccionada" id="sBn-fN-9nT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="1Mr-SF-OJH" secondAttribute="bottom" constant="40" id="2j0-JE-Zlz"/>
+                            <constraint firstItem="jVw-ci-2yH" firstAttribute="centerX" secondItem="tOc-a9-vIR" secondAttribute="centerX" id="4jf-8I-Z2f"/>
+                            <constraint firstItem="yOg-A0-GUU" firstAttribute="height" secondItem="tOc-a9-vIR" secondAttribute="height" id="67B-mD-bDY"/>
+                            <constraint firstItem="1Mr-SF-OJH" firstAttribute="centerX" secondItem="tOc-a9-vIR" secondAttribute="centerX" multiplier="1.5" id="Evz-XP-yYV"/>
+                            <constraint firstItem="yOg-A0-GUU" firstAttribute="centerX" secondItem="tOc-a9-vIR" secondAttribute="centerX" id="GMk-sh-9ql"/>
+                            <constraint firstItem="hSh-BY-nYw" firstAttribute="centerX" secondItem="tOc-a9-vIR" secondAttribute="centerX" id="Mqv-Ak-LfV"/>
+                            <constraint firstItem="jVw-ci-2yH" firstAttribute="width" secondItem="tOc-a9-vIR" secondAttribute="width" id="Uh0-9i-LVM"/>
+                            <constraint firstItem="jVw-ci-2yH" firstAttribute="centerY" secondItem="tOc-a9-vIR" secondAttribute="centerY" id="cHS-QV-hUq"/>
+                            <constraint firstItem="yOg-A0-GUU" firstAttribute="width" secondItem="tOc-a9-vIR" secondAttribute="width" id="d89-zT-d5T"/>
+                            <constraint firstItem="yOg-A0-GUU" firstAttribute="centerY" secondItem="tOc-a9-vIR" secondAttribute="centerY" id="edG-sd-vhr"/>
+                            <constraint firstItem="hSh-BY-nYw" firstAttribute="top" secondItem="6k2-7t-KjA" secondAttribute="bottom" constant="30" id="ldr-GB-2qI"/>
+                            <constraint firstItem="TmF-1z-4O0" firstAttribute="top" secondItem="POl-cv-38T" secondAttribute="bottom" constant="40" id="mlv-ti-6AC"/>
+                            <constraint firstItem="POl-cv-38T" firstAttribute="centerX" secondItem="tOc-a9-vIR" secondAttribute="centerX" multiplier="0.5" id="u9l-nL-Pbx"/>
+                            <constraint firstItem="jVw-ci-2yH" firstAttribute="top" secondItem="hSh-BY-nYw" secondAttribute="bottom" constant="30" id="zFv-Cx-w75"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selectorFechaNacimiento" destination="jVw-ci-2yH" id="oiP-wf-zr5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L7o-YZ-T5i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="aVD-v2-g5D" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="400.78125" y="100.1953125"/>
+        </scene>
+        <!--Selector Fecha Enamoramiento View Controller-->
+        <scene sceneID="ihF-Pl-9UZ">
+            <objects>
+                <viewController id="3HS-DW-tX3" customClass="SelectorFechaEnamoramientoViewController" customModule="practica3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7ng-SR-G8S"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uhi-f1-5ee"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ydq-KJ-wLC">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1f495" translatesAutoresizingMaskIntoConstraints="NO" id="WnZ-ww-Tj0">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de enamoramiento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUV-af-yK0">
+                                <rect key="frame" x="143" y="30" width="194" height="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wca-VT-NMl">
+                                <rect key="frame" x="0.0" y="79" width="480" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="530480692.36571598">
+                                    <!--2017-10-23 19:44:52 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtA-V8-Xt8">
+                                <rect key="frame" x="320" y="250" width="80" height="30"/>
+                                <state key="normal" title="Seleccionar"/>
+                                <connections>
+                                    <segue destination="jhz-Xh-iqu" kind="unwind" identifier="fechaEnamoramientoSeleccionada" unwindAction="finaliza:" id="XxU-gF-i7F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILS-vB-emf">
+                                <rect key="frame" x="98.5" y="250" width="43" height="30"/>
+                                <state key="normal" title="Volver"/>
+                                <connections>
+                                    <segue destination="jhz-Xh-iqu" kind="unwind" unwindAction="atras:" id="eOB-4G-Xl2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fUV-af-yK0" firstAttribute="top" secondItem="7ng-SR-G8S" secondAttribute="bottom" constant="30" id="7yp-tu-5Py"/>
+                            <constraint firstItem="WnZ-ww-Tj0" firstAttribute="centerX" secondItem="ydq-KJ-wLC" secondAttribute="centerX" id="Gi1-sd-Wyo"/>
+                            <constraint firstItem="Uhi-f1-5ee" firstAttribute="top" secondItem="GtA-V8-Xt8" secondAttribute="bottom" constant="40" id="LM2-JS-tE7"/>
+                            <constraint firstItem="Uhi-f1-5ee" firstAttribute="top" secondItem="ILS-vB-emf" secondAttribute="bottom" constant="40" id="MQC-nO-dXw"/>
+                            <constraint firstItem="wca-VT-NMl" firstAttribute="centerY" secondItem="ydq-KJ-wLC" secondAttribute="centerY" id="NAT-SZ-hlW"/>
+                            <constraint firstItem="ILS-vB-emf" firstAttribute="centerX" secondItem="ydq-KJ-wLC" secondAttribute="centerX" multiplier="0.5" id="Rud-Bd-CZd"/>
+                            <constraint firstItem="wca-VT-NMl" firstAttribute="centerX" secondItem="ydq-KJ-wLC" secondAttribute="centerX" id="VnR-S1-SzV"/>
+                            <constraint firstItem="wca-VT-NMl" firstAttribute="width" secondItem="ydq-KJ-wLC" secondAttribute="width" id="Vw4-0c-YAD"/>
+                            <constraint firstItem="WnZ-ww-Tj0" firstAttribute="width" secondItem="ydq-KJ-wLC" secondAttribute="width" id="cHn-be-tm3"/>
+                            <constraint firstItem="wca-VT-NMl" firstAttribute="top" secondItem="fUV-af-yK0" secondAttribute="bottom" constant="30" id="emz-gL-3Yl"/>
+                            <constraint firstItem="GtA-V8-Xt8" firstAttribute="centerX" secondItem="ydq-KJ-wLC" secondAttribute="centerX" multiplier="1.5" id="oMx-Wb-1GK"/>
+                            <constraint firstItem="WnZ-ww-Tj0" firstAttribute="height" secondItem="ydq-KJ-wLC" secondAttribute="height" id="pHx-hg-ccA"/>
+                            <constraint firstItem="fUV-af-yK0" firstAttribute="centerX" secondItem="ydq-KJ-wLC" secondAttribute="centerX" id="qsM-fh-5zb"/>
+                            <constraint firstItem="WnZ-ww-Tj0" firstAttribute="centerY" secondItem="ydq-KJ-wLC" secondAttribute="centerY" id="xUW-yF-98N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selectorFechaEnamoramiento" destination="wca-VT-NMl" id="bD7-lH-tgQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Da5-sF-eag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="jhz-Xh-iqu" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1139" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1f495" width="512" height="512"/>
+        <image name="naranja" width="202" height="279"/>
+        <image name="vinilos-infantiles-cigena-y-bebe" width="490" height="490"/>
+    </resources>
+</document>
